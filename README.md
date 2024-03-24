@@ -19,16 +19,36 @@ To install pulsar-discord you will need to download the following dependencies:
 - Node.js
 - NPM
 
-You can find download links, and install instructions for Git [here](https://git-scm.com). \
-You can use the [Node.js installer](https://nodejs.org/en/download/) to install Node.js, and NPM, or you can follow [this guide](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) for other options.
+Download links, and install instructions for Git can be found [here](https://git-scm.com) \
+You can use the [Node.js installer](https://nodejs.org/en/download/) to install Node.js, and NPM, or you can follow [this guide](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) for other options
 
 ### Installing from Source (Windows):
 
-Navigate to an empty directory, right click, \
-(by default on windows 11 you need to select `Show more options`), \
-then select `Open Git Bash Here`.
+----
 
-Now enter the following commands into the terminal:
+### Add ppm (Pulsar Package Manager) to path:
+
+1. **Open system properties (can be located by searching for "env")**
+   
+2. **Select `Environment Variables`**
+   
+3. **Open `Path` under the bottom pane `System variables`**
+
+4. **On the right side of the window select `New`**
+   
+4. **Paste the below path into the new field:**
+
+```
+C:\Program Files\Pulsar\resources\app\ppm\bin
+```
+
+5. **To finish, select `Ok` on each window until you have exited system properties**
+
+### Install package:
+
+1. **Open Git Bash in an empty directory**
+
+2. **Now enter the following commands into the terminal:**
 
 ```
 git clone https://github.com/B-Pence/pulsar-discord.git
@@ -40,20 +60,18 @@ cd pulsar-discord
 npm i
 ```
 ```
-apm link
+ppm link
 ```
 
-Then add pulsar to the registered games list under activity settings, and restart Pulsar.  
+3. Finally add pulsar to the registered games list under activity settings, and restart Pulsar
 
 ----
 
 # Rich Presence Troubleshooting
 
-* Check if Pulsar has been added in the registered games list under activity settings.  
-* Check if the option `Share your activity with others` in activity privacy under activity settings is turned on.  
-* Restart Pulsar, then Discord.
-* Please follow the [steps from FAQ](https://github.com/B-Pence/pulsar-discord/blob/master/FAQ.md#not-showing).  
-* Check if there are some outputs in developer tools `(ctrl + shift + i)`.
+* Check if Pulsar has been added in the registered games list under activity settings
+* Check if the option `Share your activity with others` in activity privacy under activity settings is turned on
+* Restart Pulsar, then Discord
 
 # FAQ / Known Errors
 
